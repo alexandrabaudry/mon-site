@@ -1,8 +1,8 @@
 backend:
-  name: github
-  repo: alexandrabaudry/mon-site
+  name: auth0
+  domain: "dev-gshoya55pssu48tl.us.auth0.com"   # À remplacer par ton domaine Auth0
+  client_id: "in4xTqaFOrlLlCEQgfX4NrbFZUGNn9GF"              # À remplacer par ton Client ID Auth0
   branch: main
-
 
 media_folder: "images"
 public_folder: "/images"
@@ -17,4 +17,5 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+
 

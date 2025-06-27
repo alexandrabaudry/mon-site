@@ -1,5 +1,7 @@
 backend:
-  name: git-gateway
+  name: auth0
+  domain: dev-gshoya55pssu48tl.us.auth0.com
+  client_id: Ov23liYp1q4V55gHtQAh
   branch: main
 
 media_folder: "images"
@@ -15,5 +17,6 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+
 
 

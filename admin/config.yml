@@ -1,7 +1,5 @@
 backend:
-  name: auth0
-  domain: "dev-gshoya55pssu48tl.us.auth0.com"   # À remplacer par ton domaine Auth0
-  client_id: "in4xTqaFOrlLlCEQgfX4NrbFZUGNn9GF "              # À remplacer par ton Client ID Auth0
+  name: git-gateway
   branch: main
 
 media_folder: "images"

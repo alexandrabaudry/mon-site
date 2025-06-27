@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <style>
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      font-size: 1.1em;
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      margin-top: 5px;
+      padding: 8px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 1.1em;
+      background-color: #5eaaa8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4b8e87;
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Contact</h1></header>
+  
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="courrier-totem.html">Courrier Totem</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="prestation-communication.html">Communication Animale</a>
+    <a href="prestation-veterinaire.html">Vétérinaire de l'âme</a>
+    <a href="prestation-soins-magnetisme.html">Soins & Magnétisme</a>
+    <a href="prestation-coaching.html">Coaching / Animal Miroir</a>
+    <a href="prestation-stage.html">Stage Communication</a>
+    <a href="prestation-kit-totem.html">Kit Animal Totem</a>
+    <a href="prestation-initiation.html">Initiation</a>
+    <a href="agenda.html">Agenda</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer>© Contact - Tous droits réservés</footer>
+</body>
+</html>
+

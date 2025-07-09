@@ -3,25 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>Connexion CMS</title>
+    <!-- Charger Decap CMS -->
     <script src="https://unpkg.com/decap-cms@3.7.0/dist/decap-cms.js"></script>
   </head>
   <body>
+    <!-- Conteneur CMS -->
+    <div id="cms"></div>
+
     <script>
-      window.addEventListener('DOMContentLoaded', function () {
-        const el = document.createElement('div');
-        el.id = 'cms';
-        document.body.appendChild(el);
+      // Attendre que le DOM soit chargé
+      document.addEventListener('DOMContentLoaded', function () {
         CMS.init();
       });
     </script>
-    <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('login', user => {
-      window.location.href = '/admin/';
-    });
-  }
-</script>
-
   </body>
 </html>
 

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Connexion CMS</title>
-    <!-- Charger Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@3.7.0/dist/decap-cms.js"></script>
-  </head>
-  <body>
-    <!-- Conteneur CMS -->
-    <div id="cms"></div>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connexion CMS</title>
+  <!-- Charger la librairie Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@3.7.0/dist/decap-cms.js"></script>
+</head>
+<body>
+  <!-- Conteneur CMS requis -->
+  <div id="cms"></div>
 
-    <script>
-      // Attendre que le DOM soit chargé
-      document.addEventListener('DOMContentLoaded', function () {
-        CMS.init();
-      });
-    </script>
-  </body>
+  <script>
+    // Attendre que le DOM soit complètement chargé avant d'initialiser CMS
+    document.addEventListener('DOMContentLoaded', function () {
+      CMS.init();
+    });
+  </script>
+</body>
 </html>
-
 

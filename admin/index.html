@@ -1,20 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Connexion CMS</title>
+    <meta charset="utf-8">
+    <title>CMS</title>
   </head>
   <body>
-    <div id="nc-root"></div>
-
     <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
     <script>
-      window.addEventListener('DOMContentLoaded', function () {
-        if (typeof CMS !== 'undefined') {
-          CMS.init();
-        }
-      });
+      if (typeof window !== "undefined") {
+        window.addEventListener('DOMContentLoaded', function () {
+          if (typeof CMS !== 'undefined') {
+            CMS.init();
+          } else {
+            console.error("CMS is not defined");
+          }
+        });
+      }
     </script>
+    <div id="nc-root"></div>
   </body>
 </html>
 

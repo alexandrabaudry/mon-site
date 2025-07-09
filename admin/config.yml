@@ -5,6 +5,10 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
+site_url: "https://amandinecorrespondanceanimaliere.netlify.app"  # Remplace par ton vrai site
+
+publish_mode: editorial_workflow  # Pour gérer les brouillons et validations
+
 collections:
   - name: "blog"
     label: "Blog"

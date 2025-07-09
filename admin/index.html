@@ -4,18 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Connexion CMS</title>
-  <!-- Charger la librairie Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@3.7.0/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/decap-cms@3.7.0/dist/decap-cms.js" defer></script>
 </head>
 <body>
-  <!-- Conteneur CMS requis -->
   <div id="cms"></div>
-
   <script>
-    // Attendre que le DOM soit complètement chargé avant d'initialiser CMS
-    document.addEventListener('DOMContentLoaded', function () {
-      CMS.init();
-    });
+    CMS.init();
   </script>
 </body>
 </html>

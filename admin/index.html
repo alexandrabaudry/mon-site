@@ -3,14 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>Connexion CMS</title>
-    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
   </head>
   <body>
+    <!-- Élément nécessaire pour que le CMS s'affiche -->
+    <div id="nc-root"></div>
+
+    <!-- Script CMS (placé **après** le body pour que `CMS` soit bien chargé) -->
+    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
     <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        CMS.init();
+      window.addEventListener('DOMContentLoaded', function () {
+        if (typeof CMS !== 'undefined') {
+          CMS.init();
+        }
       });
     </script>
   </body>
 </html>
+
 

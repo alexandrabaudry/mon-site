@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: alexandrabaudry/mon-site
+  name: git-gateway
   branch: main
-  site_domain: amandinecorrespondanceanimaliere.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"

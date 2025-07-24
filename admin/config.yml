@@ -1,25 +1,22 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: alexandrabaudry/mon-site
   branch: main
+  site_domain: amandinecorrespondanceanimaliere.netlify.app
 
-media_folder: "images"
-public_folder: "/images"
-
-site_url: "https://amandinecorrespondanceanimaliere.netlify.app"  # Remplace par ton vrai site
-
-publish_mode: editorial_workflow  # Pour gérer les brouillons et validations
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "blog"
-    label: "Blog"
+    label: "Articles du blog"
     folder: "blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Contenu", name: "body", widget: "markdown" }
-
 
 
 

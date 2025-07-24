@@ -3,9 +3,7 @@ backend:
   repo: alexandrabaudry/mon-site
   branch: main
   auth_scope: repo
-  auth_type: oauth
   base_url: https://amandinecorrespondanceanimaliere.netlify.app
-  auth_endpoint: api/auth
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
